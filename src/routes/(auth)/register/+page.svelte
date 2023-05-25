@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Card from "$components/card/main.svelte";
-  import CardHeader from "$components/card/header.svelte";
-  import CardContent from "$components/card/content.svelte";
-  import Input from "$components/input/main.svelte"
-  import Button from "$components/button/main.svelte";
-  import Link from "$components/link/main.svelte"
+  import Card from "$lib/components/card/main.svelte";
+  import CardHeader from "$lib/components/card/header.svelte";
+  import CardContent from "$lib/components/card/content.svelte";
+  import Input from "$lib/components/input/main.svelte"
+  import Button from "$lib/components/button/main.svelte";
+  import Link from "$lib/components/link/main.svelte"
 
   const onSubmit = () => {
     
@@ -20,8 +20,8 @@
   </CardHeader>
   <CardContent>
     <div class="flex flex-col gap-2 w-3/4">
-      <Input label="Email" name="email" placeholder="Email"/>
-      <Input label="Password" name="password" placeholder="Password"/>
+      <Input label="Email" type="email" placeholder="Email"/>
+      <Input label="Password" type="password" placeholder="Password"/>
       <Input label="Confirm Password" name="confirm-password" placeholder="Password"/>
       <Button>Register</Button>
       <small>
