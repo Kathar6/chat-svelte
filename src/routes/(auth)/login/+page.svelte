@@ -8,11 +8,6 @@
   import Input from "$lib/components/input/main.svelte"
   import Button from "$lib/components/button/main.svelte";
   import Link from "$lib/components/link/main.svelte"
-
-  function onLogin(event: Event) {
-    console.log(event)
-  }
-
 </script>
 
 <Card>
@@ -23,13 +18,13 @@
     </div>
   </CardHeader>
   <CardContent>
-    <form class="flex flex-col gap-2 w-3/4" on:submit|preventDefault={onLogin} >
-      <Input label="Email" type="email" placeholder="Email" required/>
-      <Input label="Password" type="password" placeholder="Password" required/>
-      <Button type="submit">Login</Button>
-      <small>
-        Don't have an account yet? <Link href="/register">Register</Link>
-      </small>
-    </form>
+      <form method="POST" action="?/auth" class="flex flex-col gap-2 w-3/4">
+        <Input name="email" label="Email" type="email" placeholder="Email" required/>
+        <Input name="password" label="Password" type="password"  placeholder="Password" required/>
+        <Button>Login</Button>
+        <small>
+          Don't have an account yet? <Link href="/register">Register</Link>
+        </small>
+      </form>
   </CardContent>
 </Card>

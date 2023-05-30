@@ -19,14 +19,14 @@
     </div>
   </CardHeader>
   <CardContent>
-    <div class="flex flex-col gap-2 w-3/4">
-      <Input label="Email" type="email" placeholder="Email"/>
-      <Input label="Password" type="password" placeholder="Password"/>
-      <Input label="Confirm Password" name="confirm-password" placeholder="Password"/>
+    <form method="post" class="flex flex-col gap-2 w-3/4">
+      <Input name="email" label="Email" type="email" placeholder="Email"/>
+      <Input name="password" label="Password" type="password" placeholder="Password"/>
+      <Input name="confirm-password" label="Confirm Password" type="password" placeholder="Password"/>
       <Button>Register</Button>
       <small>
         Already have an account? <Link href="/login">Log in</Link>
       </small>
-    </div>
+    </form>
   </CardContent>
 </Card>

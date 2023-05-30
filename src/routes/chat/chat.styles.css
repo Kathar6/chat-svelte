@@ -1,0 +1,7 @@
+header {
+  height: 40px;
+}
+
+.body {
+  height: calc(100vh - 40px)
+}

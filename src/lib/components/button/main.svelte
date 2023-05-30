@@ -1,3 +1,3 @@
-<div class="bg-orange-700 text-white text-center cursor-pointer rounded-md p-3" {...$$restProps}>
+<button class="bg-orange-700 text-white text-center cursor-pointer rounded-md p-2" {...$$restProps}>
   <slot/>
-</div>
+</button>
